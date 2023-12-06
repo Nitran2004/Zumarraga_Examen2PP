@@ -17,15 +17,16 @@
                    HorizontalOptions="FillAndExpand" />
 
             <Label x:Name="LetterCountLabel"
-                   FontSize="18"
-                   HorizontalOptions="Center" />
+       FontSize="18"
+       HorizontalOptions="Start" />
 
             <Label x:Name="ResultLabel"
-                   FontSize="18"
-                   HorizontalOptions="Center" />
+       FontSize="18"
+       HorizontalOptions="Start" />
+
             <Label x:Name="CharacterCountLabel"
-                   FontSize="18"
-                   HorizontalOptions="Center" />
+       FontSize="18"
+       HorizontalOptions="Start" />
             <Button
                 x:Name="CalculateBtn"
                 Text="Calcular"
