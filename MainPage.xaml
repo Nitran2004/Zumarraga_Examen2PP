@@ -39,7 +39,7 @@
 
             <Button x:Name="mz_Opcion1Btn" Text="Ir a Opcion1" Clicked="mz_OnOpcion1Clicked" HorizontalOptions="Center" />
 
-            <Button x:Name="Opcion2Btn" Text="Ir a Opcion2" Clicked="OnOpcion2Clicked" HorizontalOptions="Center" />
+            <Button x:Name="mz_Opcion2Btn" Text="Ir a Opcion2" Clicked="mz_OnOpcion2Clicked" HorizontalOptions="Center" />
 
             <Button x:Name="CustomPageBtn" Text="Ir a CustomPage" Clicked="OnCustomPageClicked" HorizontalOptions="Center" />
 

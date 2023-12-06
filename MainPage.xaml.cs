@@ -43,7 +43,7 @@ namespace Zumarraga_Examen2P
             await Navigation.PushAsync(new Opcion1Page());
         }
 
-        private async void OnOpcion2Clicked(object sender, EventArgs e)
+        private async void mz_OnOpcion2Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Opcion2Page());
         }

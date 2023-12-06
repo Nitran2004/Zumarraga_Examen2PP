@@ -52,6 +52,9 @@
 	  <Compile Update="mz_Opcion1Page.xaml.cs">
 	    <DependentUpon>mz_Opcion1Page.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="mz_Opcion2Page.xaml.cs">
+	    <DependentUpon>mz_Opcion2Page.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -64,7 +67,7 @@
 	  <MauiXaml Update="mz_Opcion1Page.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Opcion2Page.xaml">
+	  <MauiXaml Update="mz_Opcion2Page.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
