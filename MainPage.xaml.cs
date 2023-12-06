@@ -27,7 +27,7 @@ namespace Zumarraga_Examen2P
                                $"mz_Total de minúsculas: {mz_totalLowercase}\n" +
                                $"mz_Total de vocales: {mz_totalVowels}\n";
                 
-            CharacterCountLabel.Text = $"Total de caracteres: {mz_totalCharacters}\n";
+            CharacterCountLabel.Text = $"mz_Total de caracteres: {mz_totalCharacters}\n";
         }
 
         private void OnClearClicked(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace Zumarraga_Examen2P
             ResultLabel.Text = string.Empty;
         }
 
-        private async void OnOpcion1Clicked(object sender, EventArgs e)
+        private async void mz_OnOpcion1Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Opcion1Page());
         }

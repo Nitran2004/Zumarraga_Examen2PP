@@ -37,7 +37,7 @@
                 Clicked="OnClearClicked"
                 HorizontalOptions="Center" />
 
-            <Button x:Name="Opcion1Btn" Text="Ir a Opcion1" Clicked="OnOpcion1Clicked" HorizontalOptions="Center" />
+            <Button x:Name="mz_Opcion1Btn" Text="Ir a Opcion1" Clicked="mz_OnOpcion1Clicked" HorizontalOptions="Center" />
 
             <Button x:Name="Opcion2Btn" Text="Ir a Opcion2" Clicked="OnOpcion2Clicked" HorizontalOptions="Center" />
 
