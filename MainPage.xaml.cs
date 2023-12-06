@@ -14,20 +14,20 @@ namespace Zumarraga_Examen2P
         {
             string input = InputEntry.Text;
 
-            int totalLetters = input.Count(char.IsLetter);
-            int totalNumbers = input.Count(char.IsDigit);
-            int totalVowels = input.Count(c => "aeiouAEIOU".Contains(c));
-            int totalUppercase = input.Count(char.IsUpper);
-            int totalLowercase = input.Count(char.IsLower);
-            int totalCharacters = input.Length;
+            int mz_totalLetters = input.Count(char.IsLetter);
+            int mz_totalNumbers = input.Count(char.IsDigit);
+            int mz_totalVowels = input.Count(c => "aeiouAEIOU".Contains(c));
+            int mz_totalUppercase = input.Count(char.IsUpper);
+            int mz_totalLowercase = input.Count(char.IsLower);
+            int mz_totalCharacters = input.Length;
 
-            LetterCountLabel.Text = $"Total de letras: {totalLetters}\n";
-            ResultLabel.Text = $"Total de números: {totalNumbers}\n" +
-                               $"Total de mayúsculas: {totalUppercase}\n" +
-                               $"Total de minúsculas: {totalLowercase}\n" +
-                               $"Total de vocales: {totalVowels}\n";
+            LetterCountLabel.Text = $"mz_Total de letras: {mz_totalLetters}\n";
+            ResultLabel.Text = $"mz_Total de números: {mz_totalNumbers}\n" +
+                               $"mz_Total de mayúsculas: {mz_totalUppercase}\n" +
+                               $"mz_Total de minúsculas: {mz_totalLowercase}\n" +
+                               $"mz_Total de vocales: {mz_totalVowels}\n";
                 
-            CharacterCountLabel.Text = $"Total de caracteres: {totalCharacters}\n";
+            CharacterCountLabel.Text = $"Total de caracteres: {mz_totalCharacters}\n";
         }
 
         private void OnClearClicked(object sender, EventArgs e)
@@ -36,6 +36,21 @@ namespace Zumarraga_Examen2P
             CharacterCountLabel.Text = string.Empty;
             LetterCountLabel.Text = string.Empty;
             ResultLabel.Text = string.Empty;
+        }
+
+        private async void OnOpcion1Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Opcion1Page());
+        }
+
+        private async void OnOpcion2Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Opcion2Page());
+        }
+
+        private async void OnCustomPageClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CustomPage());
         }
     }
 }

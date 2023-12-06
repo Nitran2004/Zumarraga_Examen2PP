@@ -9,14 +9,11 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <Label Text="Ingrese una cadena de caracteres:" FontSize="18" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+
 
             <Entry x:Name="InputEntry"
-                   Placeholder="Ingrese la cadena"
+                   Placeholder="mz_Ingrese la cadena"
                    HorizontalOptions="FillAndExpand" />
 
             <Label x:Name="LetterCountLabel"
@@ -39,6 +36,12 @@
                 Text="Limpiar"
                 Clicked="OnClearClicked"
                 HorizontalOptions="Center" />
+
+            <Button x:Name="Opcion1Btn" Text="Ir a Opcion1" Clicked="OnOpcion1Clicked" HorizontalOptions="Center" />
+
+            <Button x:Name="Opcion2Btn" Text="Ir a Opcion2" Clicked="OnOpcion2Clicked" HorizontalOptions="Center" />
+
+            <Button x:Name="CustomPageBtn" Text="Ir a CustomPage" Clicked="OnCustomPageClicked" HorizontalOptions="Center" />
 
         </VerticalStackLayout>
     </ScrollView>
